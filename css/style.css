@@ -47,6 +47,10 @@ table {
 	border-spacing: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   margin: 0;
   display: flex;
@@ -54,12 +58,12 @@ body{
   align-items: center;
   width: 100vw;
  background-color: lightgrey;
-  
+
 
  font-family: 'Quicksand', sans-serif;;
 
 }
-section {  
+section {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -84,10 +88,20 @@ width: 100%;
   display: flex;
   flex-direction: row;
   width: 100%;
- 
+
   flex-wrap: wrap;
   flex-grow: 1;
- 
+
+}
+.flexrow2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+	height: 85vh;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+
+
 }
 .flexcolumn{
   display: flex;
@@ -105,18 +119,18 @@ width: 100%;
 }
 .card {
   display: flex;
-  flex-grow: 2;
+  flex-grow: 1;
   margin: 08px;
   border-radius: 6px;
   min-width: 300px;
   min-height: 350px;
 }
 .card h1 {
-  font-size: 250%;
+  font-size: 200%;
   padding: 20px;
   margin: 20px;
   color: white;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
   font-family: 'Quicksand', sans-serif;}
@@ -150,31 +164,70 @@ width: 100%;
 
 
 header {
-  width: 100vw;
- 
+  width: 100%;
+	height: 85vh;
   display: flex;
-  justify-content: center;
+	justify-content: center;
+	background-image: url(img/body.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.cursos {
+	height: auto;
+}
+.header50 {
+	height: 50vh;
 }
 .header{
-  text-align: center;
-
+	width: 100%;
+	height: 85vh;
+	text-align: center;
+	justify-content: space-around;
   display: flex;
   flex-direction: column;
-  align-items: center
-  
- 
+  align-items: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
 
+.header2{
+	width: 100%;
+	text-align: center;
+	justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 .header h1 {
   font-size: 300%;
   color: green;
   padding: 25px;
-  
+
   margin:25px ;
   font-family: 'Quicksand', sans-serif;
   font-style: bold;
   font-weight: 700;
-  
+	background-color: rgba(0, 0, 0, 0.7);
+
+
+}
+.header2 h1 {
+  font-size: 300%;
+  color: green;
+  padding: 25px;
+
+  margin:25px ;
+  font-family: 'Quicksand', sans-serif;
+  font-style: bold;
+  font-weight: 700;
 
 }
 .header h2{
@@ -190,6 +243,92 @@ header {
   padding: 10px;
 
 }
+.header2 h2{
+  font-size: 200%;
+ font-family: 'Quicksand', sans-serif;
+
+}
+.header2 p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 125%;
+  text-align: justify;
+  margin: 10px;
+  padding: 10px;
+
+}
+#jardins {
+	background-image: url("img/card7.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+#verticais {
+	background-image: url("img/card8.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#paisagismo {
+	background-image: url("img/card9.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+ #aqua {
+	 background-image: url("img/card10.jpg");
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 background-position: center;
+ }
+#pequenosEspacos {
+	background-image: url("img/card10.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#cverticais {
+	background-image: url("img/card10.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#cvasos {
+	background-image: url("img/card10.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#medicinais {
+	background-image: url("img/card10.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#ecologica {
+	background-image: url("img/card10.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#intro {
+	background-image: url("img/card10.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#pancs {
+	background-image: url("img/card10.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+#urban {
+	background-image: url("img/card10.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 .textblock {
     background-color: #8FD8B0;
   border-radius: 6px;
@@ -199,11 +338,14 @@ header {
 }
 
 nav {
- 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
   width: 100vw;
-  position: sticky;
-  top:0;
-  background-color: lightgrey;
+
+	background-color: lightgrey;
 
 
 }
@@ -212,8 +354,11 @@ flex-direction: row;
 align-items: center;
 flex-wrap: wrap;
 }
-.navrow li { 
+.navrow li {
  padding: 10px;
+ font-family: 'Quicksand', sans-serif;
+ font-weight: 700;
+ font-style: bold;
 }
 section{
  font-family: 'Quicksand', sans-serif;
@@ -229,7 +374,42 @@ section{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  ;
+	position: sticky;
+  top:0;
+}
+.nav2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+
+
+}
+.grow2{
+	display: flex;
+	flex-grow: 2;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+}
+.grow0 h1 {
+	font-size: 250%;
+	color: green;
+}
+.grow0 {
+	display: flex;
+	flex-grow: 0;
+	flex-direction: column;
+	justify-content: center;
+
+}
+.grow1 {
+	display: flex;
+	flex-grow: 1;
+}
+.grow3 {
+	display: flex;
+	flex-grow: 3;
 }
 .card1{
   background-image: url("img/card1.JPG");
@@ -242,55 +422,56 @@ section{
   background-image: url("img/card2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 
+  background-position: center
 }
 .card3{
   background-image: url("img/card3.JPG");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 
+  background-position: center
 }
 .card4{
   background-image: url("img/card4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 
+  background-position: center
 }
 .card5{
   background-image: url("img/card5.JPG");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 
+  background-position: center
 }
 .card6{
   background-image: url("img/card6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 
+  background-position: center
 }
 .card7{
   background-image: url("img/card7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 
+  background-position: center;
+
 }
 .card8{
   background-image: url("img/card8.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 
+  background-position: center;
 }
 .card9{
   background-image: url("img/card9.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 
+  background-position: center
 }
 .card10{
   background-image: url("img/card10.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 
+  background-position: center
 }
 
 
@@ -306,27 +487,28 @@ section {
   flex-direction: column;
   align-items: stretch;
   width: 100%
- 
+
 
 }
 .contact h1 {
   font-size: 300%;
   color: lightgrey;
   padding: 25px;
-  
-  margin:25px ;
+
+  margin:15px ;
   font-family: 'Quicksand', sans-serif;
   font-style: bold;
   font-weight: 700;
-  
+
 
 }
 .contact h2{
-  margin: 15px;
+  margin: 20px;
   font-size: 200%;
  font-family: 'Quicksand', sans-serif;
  font-weight: 700;
  font-style: bold;
+
 
 }
 .contact h3{
@@ -340,3 +522,31 @@ section {
   text-align: left;
   margin: 10px;
   padding: 10px;
+}
+
+.objetivo {
+	font-weight: 700;
+  font-style: bold;
+}
+.textcard {
+	max-width: 500px;
+}
+@media (min-width: 1200px) {
+	.card {
+		width: 25%
+	}
+}
+@media (max-width: 1200px) {
+	.flexrow2{
+		flex-wrap: wrap;
+	}
+	.card {
+		width: 50%
+	}
+}
+@media (max-width: 768px) {
+	.card{
+		width: 100%;
+	}
+
+}
