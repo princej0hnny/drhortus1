@@ -210,12 +210,12 @@ header {
   font-size: 300%;
   color: green;
   padding: 25px;
-
   margin:25px ;
   font-family: 'Quicksand', sans-serif;
   font-style: bold;
   font-weight: 700;
 	background-color: rgba(0, 0, 0, 0.7);
+	max-width: 80%
 
 
 }
@@ -223,7 +223,6 @@ header {
   font-size: 300%;
   color: green;
   padding: 25px;
-
   margin:25px ;
   font-family: 'Quicksand', sans-serif;
   font-style: bold;
@@ -329,6 +328,13 @@ header {
 	background-size: cover;
 	background-position: center;
 }
+ #empresa{
+	background-image: url("img/card1.jpg");
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	background-position: center;
+
+ }
 .textblock {
     background-color: #8FD8B0;
   border-radius: 6px;
@@ -482,7 +488,6 @@ section {
 .contact{
   margin-top: 20px;
   text-align: center;
-  background-color: #50C878;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -537,8 +542,9 @@ section {
 	}
 }
 @media (max-width: 1200px) {
-	.flexrow2{
+	.flexrow2 {
 		flex-wrap: wrap;
+		height: auto;
 	}
 	.card {
 		width: 50%
@@ -548,5 +554,36 @@ section {
 	.card{
 		width: 100%;
 	}
+	.flexrow2 h1 {
+		font-size: 400%;
+	}
+	.header2 h1 {
+		font-size: 400%;
+	}
+	.header h2 {
+		font-size: 250%;
+
+	}
+	.header p {
+		font-size: 175%;
+	}
+	.header2 h2 {
+		font-size: 250%;
+	}
+	.header2 p {
+		font-size: 175%;
+	}
+}
+footer {
+	width: 100vw;
+	height: auto;
+	background-color: rebeccapurple;
+}
+.navitem {
+	background-color: black;
+	color: white;
+	border-radius: 40px;
+	padding-left: 3px;
+	padding-right: 3px;
 
 }
