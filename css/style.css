@@ -551,7 +551,7 @@ section {
 	}
 }
 @media (max-width: 768px) {
-	.card{
+	.card	{
 		width: 100%;
 	}
 	.flexrow2 h1 {
@@ -565,13 +565,13 @@ section {
 
 	}
 	.header p {
-		font-size: 175%;
+		font-size: 225%;
 	}
 	.header2 h2 {
 		font-size: 250%;
 	}
 	.header2 p {
-		font-size: 175%;
+		font-size: 225%;
 	}
 }
 footer {
