@@ -549,12 +549,7 @@ section {
 	.card {
 		width: 50%
 	}
-}
-@media (max-width: 768px) {
-	.card	{
-		width: 100%;
-	}
-	.flexrow2 h1 {
+		.flexrow2 h1 {
 		font-size: 400%;
 	}
 	.header2 h1 {
@@ -573,6 +568,12 @@ section {
 	.header2 p {
 		font-size: 225%;
 	}
+}
+@media (max-width: 768px) {
+	.card	{
+		width: 100%;
+	}
+
 }
 footer {
 	width: 100vw;
